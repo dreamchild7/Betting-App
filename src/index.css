@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.main {
+    display: flex;
+    width: 400px;
+    border: 1px solid #152238;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% auto 0;
+    padding: 5em;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media only screen and (max-width:576px) {
+    .main {
+        width: 80%;
+    }
+}
+
+.main-button {
+    width: 15em;
+    border: none;
+    margin-top: 5px;
+    padding: .5rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.buttonClick {
+    display: flex;
+    width: 100%;
+    margin-top: 5em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.buttonClick button {
+    border: none;
+    width: 5rem;
+    padding: .3rem;
+    cursor: pointer;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.main-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.main-control .switchMode {
+    border: none;
+    background-color: #152238;
+    color: #FFFFFF;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #152238;
+    font-size: 2rem;
 }
